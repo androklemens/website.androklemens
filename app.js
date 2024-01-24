@@ -2,6 +2,28 @@ const hamburger = document.querySelector('.header .nav-bar .nav-list .hamburger'
 const mobile_menu = document.querySelector('.header .nav-bar .nav-list ul');
 const menu_item = document.querySelectorAll('.header .nav-bar .nav-list ul li a');
 const header = document.querySelector('.header.container');
+function createSnowflake() {
+  const snowflake = document.createElement('div');
+  snowflake.classList.add('snowflake');
+  snowflake.style.left = `${Math.random() * 100}%`;
+  snowflake.style.animationDuration = `${Math.random() * 3 + 2}s`;
+	  // Menghapus elemen salju setelah animasi selesai
+  snowflake.addEventListener('animationend', () => {
+    snowflake.remove();
+  });
+  
+  document.body.appendChild(snowflake);
+}
+
+// Membuat efek salju turun secara terus-menerus
+function createSnowfall() {
+  setInterval(() => {
+    createSnowflake();
+  }, 200);
+}
+
+// Memanggil fungsi untuk memulai efek salju
+createSnowfall();
 
 hamburger.addEventListener('click', () => {
 	hamburger.classList.toggle('active');
