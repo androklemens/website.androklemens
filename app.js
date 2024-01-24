@@ -2,6 +2,13 @@ const hamburger = document.querySelector('.header .nav-bar .nav-list .hamburger'
 const mobile_menu = document.querySelector('.header .nav-bar .nav-list ul');
 const menu_item = document.querySelectorAll('.header .nav-bar .nav-list ul li a');
 const header = document.querySelector('.header.container');
+// Tambahkan script untuk menambahkan dan menghapus class "clicked" saat ikon diklik
+const icons = document.querySelectorAll('.icon.animated-icon');
+icons.forEach(icon => {
+  icon.addEventListener('click', () => {
+    icon.classList.toggle('clicked');
+  });
+});
 function createSnowflake() {
   const snowflake = document.createElement('div');
   snowflake.classList.add('snowflake');
