@@ -723,4 +723,12 @@ p {
     transform: translateY(100vh);
   }
 }
+/* Tambahkan gaya CSS untuk animasi saat diklik */
+.icon.animated-icon {
+  transition: transform 0.3s ease-in-out;
+}
+
+.icon.animated-icon.clicked {
+  transform: scale(1.2);
+}
 /* End  Media Query For Desktop */
