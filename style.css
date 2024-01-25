@@ -731,13 +731,33 @@ p {
 .icon.animated-icon.clicked {
   transform: scale(1.2);
 }
-video {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+body, html {
   height: 100%;
-  object-fit: cover;
+  margin: 0;
+  padding: 0;
+}
+
+#video-container {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
   z-index: -1;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  /* Gaya tambahan untuk konten halaman Anda */
 }
 /* End  Media Query For Desktop */
