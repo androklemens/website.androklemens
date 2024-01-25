@@ -1,23 +1,4 @@
 body {
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    margin-bottom: 20px;
-    padding: 20px;
-}
-
-section {
-    margin-bottom: 30px;
-    padding: 20px;
-}
-
-footer {
-    padding: 10px;
-}
-
-body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
@@ -26,19 +7,19 @@ body {
 }
 
 header, section, footer {
-    max-width: 600px;
-    margin: 0 auto;
+    max-width: 100%; /* Mengubah maksimum lebar menjadi 100% */
+    margin: 0; /* Menghapus margin */
     padding: 20px;
 }
 
 header {
     background-image: url('https://telegra.ph/file/b16a052711b5cf569e72d.jpg');
-    background-size: cover; /* atau background-size: contain; */
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     color: #fff;
     text-align: center;
-    padding: 20px; /* Sesuaikan padding sesuai kebutuhan */
+    padding: 20px;
 }
 
 section {
