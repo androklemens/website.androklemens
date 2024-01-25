@@ -21,11 +21,8 @@ body {
     background-color: #f8f8f8;
     color: #333;
 }
-
-header, section, footer {
-    max-width: 100%; /* Mengubah maksimum lebar menjadi 100% */
-    margin: 0; /* Menghapus margin */
-    padding: 20px;
+header {
+    background-size: 50; /* atau nilai lainnya sesuai kebutuhan */
 }
 
 header {
@@ -39,7 +36,12 @@ header {
 }
 
 section {
-    margin-top: 20px;
+    margin-top: 10px; /* Mengurangi margin-top dari 20px menjadi 10px */
+}
+
+footer {
+    padding: 5px 0; /* Mengurangi padding dari 10px menjadi 5px */
+    margin-top: 10px; /* Mengurangi margin-top dari 20px menjadi 10px */
 }
 
 button {
