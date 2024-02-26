@@ -1,0 +1,6 @@
+// backgroundImage.js
+
+var imageFiles = ['bg-image1.jpg', 'bg-image2.jpg']; // Daftar gambar acak
+var randomImage = imageFiles[Math.floor(Math.random() * imageFiles.length)]; // Memilih gambar secara acak dari daftar
+var imageElement = document.querySelector('.hero_bg_box'); // Memilih elemen dengan kelas 'hero_bg_box'
+imageElement.style.backgroundImage = 'url("img-bg/' + randomImage + '")'; // Mengatur gambar acak sebagai latar belakang
