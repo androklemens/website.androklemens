@@ -182,6 +182,25 @@ a:focus {
           justify-content: center;
 }
 
+.contact_nav a {
+  position: relative;
+  display: inline-block; /* untuk memastikan ukuran kontainer ikon sesuai dengan ukuran ikon */
+}
+
+.contact_nav a img {
+  width: 45px; /* Sesuaikan ukuran ikon dengan kebutuhan Anda */
+  height: auto; /* Biarkan tinggi ikon menyesuaikan proporsi dengan lebar */
+  vertical-align: middle; /* Untuk menempatkan ikon secara vertikal di tengah dengan teks */
+  margin-right: 5px; /* Jarak antara ikon dan teks */
+}
+
+/* Jika Anda ingin mengatur ukuran dan posisi ikon menggunakan kelas 'bx-current-location' */
+.contact_nav a .bx-current-location {
+  font-size: 24px; /* Sesuaikan ukuran ikon dengan kebutuhan Anda */
+  vertical-align: middle; /* Untuk menempatkan ikon secara vertikal di tengah dengan teks */
+  margin-right: 5px; /* Jarak antara ikon dan teks */
+}
+
 .header_section .header_top .contact_nav a i {
   margin-right: 5px;
   background-color: #159ec0;
