@@ -6,27 +6,27 @@ body {
 }
 
 .layout_padding {
-  padding: 90px 0;
+  padding: 60px 0;
 }
 
 .layout_padding2 {
-  padding: 75px 0;
+  padding: 45px 0;
 }
 
 .layout_padding2-top {
-  padding-top: 75px;
+  padding-top: 45px;
 }
 
 .layout_padding2-bottom {
-  padding-bottom: 75px;
+  padding-bottom: 45px;
 }
 
 .layout_padding-top {
-  padding-top: 90px;
+  padding-top: 60px;
 }
 
 .layout_padding-bottom {
-  padding-bottom: 90px;
+  padding-bottom: 60px;
 }
 
 .icon {
@@ -48,8 +48,11 @@ body {
 }
 
 .hero_bg_image {
-  width: 10px !important; /* Menggunakan !important untuk menggantikan aturan yang lebih spesifik */
-  height: 300px !important; /* Menggunakan !important untuk menggantikan aturan yang lebih spesifik */
+  width: 100%;
+  height: auto;
+  max-height: 350px;
+  object-fit: cover;
+  display: block;
 }
 
 
